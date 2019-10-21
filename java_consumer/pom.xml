@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hzn</groupId>
+    <artifactId>java_consumer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+<dependencies>
+    <dependency>
+        <groupId>hzn</groupId>
+        <artifactId>api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.6.2</version>
+    </dependency>
+
+    <!--注册中心使用的是zk,因为zk操作过于复杂，所以dubbo在向zk注册时使用curator,
+    是对zk进行封装的客户端框架，用于操作zk-->
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-framework</artifactId>
+        <version>2.12.0</version>
+    </dependency>
+</dependencies>
+</project>
