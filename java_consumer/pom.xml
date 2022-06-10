@@ -18,7 +18,7 @@
     <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>dubbo</artifactId>
-        <version>2.6.2</version>
+        <version>2.6.12</version>
     </dependency>
 
     <!--注册中心使用的是zk,因为zk操作过于复杂，所以dubbo在向zk注册时使用curator,
